@@ -5,10 +5,15 @@ O código do projeto é um **CRUD simples** com:
 * **HTML**
 * **CSS**
 * **JavaScript vanilla**
-* versionamento com **Git**
-* fluxo de trabalho com **Gitflow**
-* etapa de **Pull Request no GitHub**
-* etapa de **testes automáticos com GitHub Actions**
+
+Em todas as etapas você deve usar:
+* **Git**
+* Branches e fluxo de trabalho com **Git flow**
+
+Ao final você deverá fazer uso do github para procedimentos como pull request e testes automáticos no github actions:
+
+* Etapa de **Pull Request no GitHub**
+* Etapa de **testes automáticos com GitHub Actions**
 
 ---
 
