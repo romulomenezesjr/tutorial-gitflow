@@ -10,7 +10,7 @@ Em todas as etapas você deve usar:
 * **Git**
 * Branches e fluxo de trabalho com **Git flow**
 
-Ao final você deverá fazer uso do github para procedimentos como pull request e testes automáticos no github actions:
+Ao final você deverá fazer uso do github para procedimentos como pull request e testes automatizados no Github Actions:
 
 * Etapa de **Pull Request no GitHub**
 * Etapa de **testes automáticos com GitHub Actions**
