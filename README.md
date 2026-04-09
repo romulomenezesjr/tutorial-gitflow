@@ -21,7 +21,7 @@ Ao final você deverá fazer uso do github para procedimentos como pull request 
 
 ## 1. Objetivo
 
-Neste tutorial, o aluno irá aprender a:
+Neste tutorial, você irá aprender a:
 
 * iniciar um repositório Git
 * organizar branches no modelo Gitflow
@@ -30,14 +30,12 @@ Neste tutorial, o aluno irá aprender a:
 * executar testes automáticos com GitHub Actions
 * aplicar um **hotfix** em produção
 
-> Neste material, **não será usado o comando `git flow`**.
-> Todo o processo será feito com **comandos nativos do Git**, apenas seguindo o **modelo Gitflow**.
 
 ---
 
 # 2. Visão geral do fluxo
 
-Vamos usar estas branches:
+Ao longo do tutorial estas são as branches a serem usadas:
 
 * `main` → produção
 * `develop` → integração das funcionalidades
@@ -47,11 +45,9 @@ Vamos usar estas branches:
 
 ---
 
-# 3. Projeto que será construído
+# 3. Projeto: CRUD simples
 
-Nome do projeto:
-
-**crud-clientes**
+Nome do projeto: **crud-clientes**
 
 Funcionalidades do CRUD:
 
@@ -60,7 +56,7 @@ Funcionalidades do CRUD:
 * **Update** → editar cliente
 * **Delete** → remover cliente
 
-Também haverá:
+Após as funcionalidades nós iremos fazer:
 
 * uma etapa de **release**
 * uma etapa de **Pull Request**
@@ -70,6 +66,8 @@ Também haverá:
 ---
 
 # 4. Estrutura final esperada
+
+Ao final do projeto os diretórios e arquivos estarão da seguinte forma:
 
 ```text
 crud-clientes/
@@ -110,14 +108,9 @@ git branch -M main
 
 # 6. Criando os arquivos iniciais
 
-## 6.1 `index.html`
-
-
-
-## 6.2 `style.css`
-
-
-## 6.3 `app.js`
+* `index.html`
+* `style.css`
+* `app.js`
 
 
 # 7. Primeiro commit
@@ -131,7 +124,7 @@ git commit -m "chore: estrutura inicial do projeto CRUD"
 
 # 8. Criando a branch `develop`
 
-No Gitflow, o desenvolvimento diário ocorre em `develop`.
+No Gitflow, o desenvolvimento diário ocorre nas branches de funcionalidades e na branche `develop`. Sendo assim, crie uma branch **develop**
 
 ```bash
 git checkout -b develop
@@ -139,9 +132,15 @@ git checkout -b develop
 
 ---
 
-# 9. Criando a feature de cadastro e listagem
+# 9. Criando as feature 
 
-Embora o projeto inicial já tenha estrutura, vamos supor um fluxo didático em que cada parte é evoluída em branches separadas.
+A partir da estrutura inicial vamos fazer a implementação de cada uma das funcionalidades do CRUD:
+
+* Create
+* Read
+* Update
+* Delete
+
 
 ## 9.1 Criar branch de feature
 
@@ -150,9 +149,9 @@ git checkout develop
 git checkout -b feature/create-read-clientes
 ```
 
-## 9.2 Ajuste didático
+## 9.2 Codificação
 
-Nessa etapa, o aluno pode implementar ou revisar:
+Nessa etapa, adicione no seu projeto **apenas** as seguintes funcionalidades a partir do código **projeto-final**:
 
 * criação de cliente
 * listagem de cliente
@@ -176,6 +175,11 @@ git branch -d feature/create-read-clientes
 
 # 10. Criando a feature de edição e exclusão
 
+Nessa etapa, adicione no seu projeto **apenas** as seguintes funcionalidades a partir do código **projeto-final**:
+
+* edição de cliente
+* exclusão de cliente
+
 ## 10.1 Nova branch
 
 ```bash
@@ -183,7 +187,7 @@ git checkout develop
 git checkout -b feature/update-delete-clientes
 ```
 
-## 10.2 Implementar ou revisar:
+## 10.2 Codificação:
 
 * edição
 * exclusão
@@ -219,7 +223,7 @@ git push -u origin develop
 
 ---
 
-# 12. Etapa obrigatória: Pull Request no GitHub
+# 12. Pull Request no GitHub
 
 No GitHub, Pull Requests são o recurso central para propor mudanças, revisar código e discutir antes do merge. O GitHub também permite criar PR normal ou rascunho, e solicitar revisão de outras pessoas. ([GitHub Docs][1])
 
@@ -266,7 +270,7 @@ No GitHub:
 
 ## 12.3 Revisão
 
-Peça aos alunos que analisem:
+Analisem:
 
 * objetivo da alteração
 * arquivos modificados
@@ -488,7 +492,7 @@ Todos os testes passaram.
 
 ---
 
-# 16. Etapa obrigatória: GitHub Actions
+# 16. GitHub Actions
 
 O GitHub Actions usa arquivos YAML dentro de `.github/workflows/` para definir workflows automatizados. Esses workflows podem ser disparados por eventos como `push` e `pull_request`. O quickstart oficial do GitHub mostra justamente esse padrão de criar um workflow que roda quando você faz commit ou abre PR. ([GitHub Docs][2])
 
@@ -855,7 +859,7 @@ git push origin v1.0.0
 
 ---
 
-# 25. O que o aluno aprende com esse projeto
+# 25. Revisão
 
 Ao final, o aluno compreende que:
 
@@ -874,9 +878,9 @@ Ao final, o aluno compreende que:
 
 ---
 
-# 26. Sugestão de exercício avaliativo
+# 26. Exercício avaliativo
 
-Peça ao aluno para repetir o processo em um projeto parecido, por exemplo:
+Repetir o processo em um projeto parecido:
 
 **CRUD de tarefas**
 
