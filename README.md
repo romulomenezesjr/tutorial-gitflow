@@ -1,6 +1,6 @@
-A seguir está um **tutorial refeito**, usando **apenas o Git** e seguindo o **modelo Gitflow manualmente**, sem instalar `git-flow`.
+Siga este tutorial configurando um repositório e copiando passo a passo os códigos do diretório **projeto-final** para **projeto-inicial** de acordo com as etapas a seguir.
 
-O projeto será um **CRUD simples** com:
+O código do projeto é um **CRUD simples** com:
 
 * **HTML**
 * **CSS**
